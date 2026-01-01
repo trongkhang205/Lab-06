@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+*.suo
+*.user
+*.pdb
+*.cache
+
+# SQL
+*.mdf
+*.ldf
+
+# Config
+db_config.txt
+
+# Packages
+packages/

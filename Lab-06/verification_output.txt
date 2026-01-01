@@ -1,0 +1,83 @@
+Changed database context to 'BookstoreDB'.
+--- DATA VERIFICATION REPORT ---
+1. Users Table:
+UserCount  
+-----------
+          1
+
+(1 rows affected)
+UserID      Username                                           Password                                           FullName                                                                                             Role                
+----------- -------------------------------------------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- --------------------
+          1 admin                                              123456                                             System Administrator                                                                                 Admin               
+
+(1 rows affected)
+-------------------------------
+2. Categories Table:
+CategoryCount
+-------------
+            4
+
+(1 rows affected)
+CategoryID  CategoryName                                                                                        
+----------- ----------------------------------------------------------------------------------------------------
+          1 Science                                                                                             
+          2 Literature                                                                                          
+          3 History                                                                                             
+          4 Technology                                                                                          
+
+(4 rows affected)
+-------------------------------
+3. Books Table:
+BookCount  
+-----------
+          4
+
+(1 rows affected)
+Title                                                                                                                                                                                                    Author                                                                                               Price               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- --------------------
+Clean Code                                                                                                                                                                                               Robert C. Martin                                                                                                300000.00
+Sapiens: Lược Sử Loài Người                                                                                                                                                                     Yuval Noah Harari                                                                                               150000.00
+Nhà Giả Kim                                                                                                                                                                                           Paulo Coelho                                                                                                     75000.00
+Lập Trình C# Cơ Bản                                                                                                                                                                                Phạm Khang                                                                                                    120000.00
+
+(4 rows affected)
+-------------------------------
+4. Customers Table:
+CustomerCount
+-------------
+            5
+
+(1 rows affected)
+FullName                                                                                             PhoneNumber         
+---------------------------------------------------------------------------------------------------- --------------------
+Nguyễn Văn A                                                                                      0901234567          
+Trần Thị B                                                                                       0987654321          
+Lê Văn C                                                                                           0911223344          
+Phạm Thị D                                                                                       0933445566          
+Hoàng Văn E                                                                                        0944556677          
+
+(5 rows affected)
+-------------------------------
+5. Loans Table:
+LoanCount  
+-----------
+          2
+
+(1 rows affected)
+LoanID      CustomerID  LoanDate                ReturnDate              Status              
+----------- ----------- ----------------------- ----------------------- --------------------
+          1           1 2026-01-01 18:16:22.593                    NULL Borrowed            
+          2           2 2025-12-27 18:16:22.597                    NULL Borrowed            
+
+(2 rows affected)
+-------------------------------
+6. LoanDetails Table:
+LoanDetailCount
+---------------
+              0
+
+(1 rows affected)
+LoanDetailID LoanID      BookID      Quantity   
+------------ ----------- ----------- -----------
+
+(0 rows affected)

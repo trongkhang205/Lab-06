@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+*.suo
+*.user
+*.pdb
+*.cache
+*.slnx # Maybe keep if it is the solution file, but usually VS generates user opts. Let's keep slnx if it's the solution.
+
+# SQL
+*.mdf
+*.ldf
+
+# Config
+db_config.txt
+
+# Packages
+packages/
